@@ -41,51 +41,59 @@
             <div id="about" class="reveal">
                 <h2>Who am i ?</h2>
                 <div id="paragraphe_who_am_i">
-                    <p class="texte">Hello, I am a student at ENSISA in Mulhouse, specializing in computer science 
-                        and networks. I am passionate about emerging technologies and developing innovative solutions. 
-                        I am currently looking for an internship for the 2025–2026 academic year to apply my knowledge 
-                        and gain practical experience in my field. Before joining ENSISA, I completed two years of
-                        preparatory classes, which allowed me to strengthen my skills in logic, algorithms, and 
-                        problem-solving. 
+                    <p class="texte">Hi! I’m a computer science and networking student at ENSISA in Mulhouse, 
+                        driven by a passion for technology and building practical, innovative solutions. I’m seeking 
+                        an internship for the 2025–2026 academic year to apply my skills in real-world projects and 
+                        gain hands-on experience.Before ENSISA, I completed two years of preparatory classes, where 
+                        I honed my abilities in algorithms, logic, and problem-solving.
                     </p>
                     <p class="texte" style="margin-top: 20px;">
-                        Alongside my studies, I work on personal projects in computer science and 
-                        networking, which I showcase in my portfolio, with the source code available on GitHub, 
-                        to share my work and my passion for development.
+                        Beyond my studies, I develop personal projects in software and networking, which I 
+                        showcase in my portfolio, with full source code available on GitHub, highlighting my 
+                        dedication to clean, functional, and creative development.
                     </p>
                 </div>
             </div>
             <!-- skills -->
             <div id="skills" class="reveal">
                 <h2>Skills</h2>
-                <div class="skills_parts">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Frontend</h3>
-                    <div class="languages">
-                        <p>HTML</p>
+                <div id="skills_container">
+                    <div class="skills_parts">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Frontend</h3>
+                        <div class="languages">
+                            <p>HTML</p>
+                        </div>
+                        <div class="languages">
+                            <p>CSS</p>
+                        </div>
+                        <div class="languages">
+                            <p>Java Script</p>
+                        </div>
                     </div>
-                    <div class="languages">
-                        <p>CSS</p>
+                    <div class="skills_parts">
+                        <i class="fa-solid fa-sitemap"></i>
+                        <h3>Backend</h3>
+                        <div class="languages">
+                            <p>Django framework</p>
+                        </div>
                     </div>
-                    <div class="languages">
-                        <p>Java Script</p>
+                    <div class="skills_parts">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Database</h3>
+                        <div class="languages">
+                            <p>SQL</p>
+                        </div>
                     </div>
-                </div>
-                <div class="skills_parts">
-                    <i class="fa-solid fa-sitemap"></i>
-                    <h3>Backend</h3>
-                    <div class="languages">
-                        <p>Python</p>
-                    </div>
-                    <div class="languages">
-                        <p>C</p>
-                    </div>
-                </div>
-                <div class="skills_parts">
-                    <i class="fa-solid fa-database"></i>
-                    <h3>Database</h3>
-                    <div class="languages">
-                        <p>SQL</p>
+                    <div class="skills_parts">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Algorithms</h3>
+                        <div class="languages">
+                            <p>C</p>
+                        </div>
+                        <div class="languages">
+                            <p>Python</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,6 +101,21 @@
             <div id="projects" class="reveal">
                 <h2>Personnal projects</h2>
                 <!-- project 1 -->
+                <fieldset id="project_1">
+                    <legend class="texte">Weather app</legend>
+                    <p class="texte">
+                        This Weather App allows users to check the current weather and a 5-day forecast in 3-hour 
+                        intervals for any city. It was developed entirely using JavaScript and integrates the 
+                        OpenWeatherMap API to fetch real-time data such as temperature, humidity, wind, and weather 
+                        conditions. The interface updates dynamically based on user input, providing clear and 
+                        responsive information. The project demonstrates practical use of APIs, asynchronous 
+                        requests, and DOM manipulation to create an interactive web application.
+                    </p>
+                    <video src="videos/weatherapp-video.mp4" loop muted autoplay></video>
+                    <div class="github_code">
+                        <a href="https://github.com/Ismail-elm/Weather-app" target="_blank"><i class="fa-brands fa-github"></i> View Source Code</a>
+                    </div>
+                </fieldset>
                 <fieldset id="project_1">
                     <legend class="texte">The Krojanty game</legend>
                     <p class="texte">
@@ -105,18 +128,42 @@
                         unit testing, and Doxygen documentation to maintain professional-quality development.
                     </p>
                     <video src="videos/krojanty-video.mp4" loop muted autoplay></video>
+                    <div class="github_code">
+                        <a target="_blank"><i class="fa-brands fa-github"></i> Source Code not available</a>
+                    </div>
+                    <p>This project was developed as a team. The source code is not publicly available due 
+                        to copyright and shared ownership.</p>
                 </fieldset>
                 <fieldset id="project_1">
-                    <legend class="texte">Weather app</legend>
+                    <legend class="texte">Chat app</legend>
                     <p class="texte">
-                        This Weather App allows users to check the current weather and a 5-day forecast in 3-hour 
-                        intervals for any city. It was developed entirely using JavaScript and integrates the 
-                        OpenWeatherMap API to fetch real-time data such as temperature, humidity, wind, and weather 
-                        conditions. The interface updates dynamically based on user input, providing clear and 
-                        responsive information. The project demonstrates practical use of APIs, asynchronous 
-                        requests, and DOM manipulation to create an interactive web application.
+                        This Chat project implements a centralized messaging application with multiple discussion rooms, 
+                        user authentication, emoji support, and moderation features. Developed using 
+                        Django for the server and JavaScript for the client, it features dynamic page rendering, 
+                        real-time chat updates, and robust data management. The project demonstrates full-stack web 
+                        development skills, object-oriented programming, clean coding practices and a modular architecture 
+                        for maintainability and scalability.
                     </p>
-                    <video src="" loop muted autoplay></video>
+                    <video src="videos/chatapp-video.mp4" loop muted autoplay></video>
+                    <div class="github_code">
+                        <a href="https://github.com/Ismail-elm/Chat-app" target="_blank"><i class="fa-brands fa-github"></i> View Source Code</a>
+                    </div>
+                </fieldset>
+                <fieldset id="project_1">
+                    <legend class="texte">Transport network</legend>
+                    <p class="texte">
+                        This Transport Network project models a city’s public transport system (bus, metro, tram) as
+                        a graph and provides interactive features for analysis and route finding. Developed entirely 
+                        in C, it implements adjacency lists, dynamic arrays, and hash tables, with Dijkstra’s 
+                        algorithm for shortest paths and multiple sorting algorithms to analyze station connectivity. 
+                        The program features a command-line menu for station info, neighbor listing, minimal path 
+                        calculation, and degree-based sorting, following a modular architecture, Makefile-based 
+                        compilation, and clean coding standards for maintainability and clarity.
+                    </p>
+                    <video src="videos/metro-video.mp4" loop muted autoplay></video>
+                    <div class="github_code">
+                        <a href="https://github.com/Ismail-elm/Metro-network" target="_blank"><i class="fa-brands fa-github"></i> View Source Code</a>
+                    </div>
                 </fieldset>
             </div>
             <!-- contact -->
@@ -129,8 +176,6 @@
                 </div>    
             </div>
         </section>
-        <!-- just a div because of footer collapsing -->
-        <div style="height:50px; background-color: #0f1a2b;"></div>
         <!-- footer -->
         <footer>
             <p>Copyright © 2025 | Designed by Ismail EL MAALLEM</p>
